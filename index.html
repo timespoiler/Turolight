@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turolight AI Transformation Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .progress-bar { animation: fillProgress 2s ease-in-out; }
+        @keyframes fillProgress { from { width: 0%; } }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="gradient-bg text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="mb-6">
+                <div class="inline-flex items-center gap-3">
+                    <!-- Turolight Logo from Canva Brand -->
+                    <img src="https://www.canva.com/brand/kAGvRfTq-vE/logo" alt="Turolight Logo" class="w-12 h-12 drop-shadow-lg" onerror="this.style.display='none'">
+                    <span class="text-3xl font-bold"><span class="text-black">TURO</span><span class="text-white">LIGHT</span></span>
+                </div>
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Turolight AI Transformation</h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">An AI-enhanced Smart Operations & Sales Portal to streamline operations, enhance customer experience, and enable data-driven B2C expansion</p>
+        </div>
+    </div>
+
+    <!-- Current Business Overview -->
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Understanding Turolight</h2>
+            <p class="text-lg text-gray-600">Research & Current State Analysis</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                <h3 class="text-xl font-semibold mb-6 text-blue-600">Core Business</h3>
+                <div class="space-y-4">
+                    <div class="text-left">
+                        <span>Commercial & Industrial Lighting Solutions</span>
+                    </div>
+                    <div class="text-left">
+                        <span>B2B Focus: Contractors, Builders, Businesses</span>
+                    </div>
+                    <div class="text-left">
+                        <span>Some B2C Opportunities</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                <h3 class="text-xl font-semibold mb-6 text-red-600">Current Challenges</h3>
+                <div class="space-y-3">
+                    <div class="text-sm text-left">
+                        <span>Limited digital customer engagement {assumed based on traditional B2B focus}</span>
+                    </div>
+                    <div class="text-sm text-left">
+                        <span>Inventory inaccuracy {common in manufacturing without advanced ERP}</span>
+                    </div>
+                    <div class="text-sm text-left">
+                        <span>Slow PO/reorder processes {typical manual procurement workflows}</span>
+                    </div>
+                    <div class="text-sm text-left">
+                        <span>Manual quotation system {standard for custom lighting projects}</span>
+                    </div>
+                    <div class="text-sm text-left">
+                        <span>No predictive demand forecasting {most SMEs lack ML capabilities}</span>
+                    </div>
+                    <div class="text-sm text-left">
+                        <span>Not mobile or subscription-ready {traditional business model}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision Comparison -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-16">
+            <div class="bg-gradient-to-r from-blue-800 to-blue-900 text-white p-6">
+                <h2 class="text-2xl font-bold">🎯 Vision: Current vs Future State</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold">Area</th>
+                            <th class="px-6 py-4 text-left font-semibold text-red-600">Current State</th>
+                            <th class="px-6 py-4 text-left font-semibold text-green-600">Future (with AI/ERP)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Inventory Management</td>
+                            <td class="px-6 py-4 text-red-600">Manual reorder points, stockouts</td>
+                            <td class="px-6 py-4 text-green-600">NetSuite advanced inventory management and Predictive restocking with AI</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Customer Service</td>
+                            <td class="px-6 py-4 text-red-600">Phone/email only</td>
+                            <td class="px-6 py-4 text-green-600">AI chat assistant + app</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Sales Channels</td>
+                            <td class="px-6 py-4 text-red-600">Static B2B site</td>
+                            <td class="px-6 py-4 text-green-600">Mobile-enabled, subscription-ready</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Manufacturing Data</td>
+                            <td class="px-6 py-4 text-red-600">Not digitized</td>
+                            <td class="px-6 py-4 text-green-600">KPI dashboards, productivity analytics</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Quoting Process</td>
+                            <td class="px-6 py-4 text-red-600">Manual</td>
+                            <td class="px-6 py-4 text-green-600">AI-generated quotes from CRM</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-medium">Demand Forecasting</td>
+                            <td class="px-6 py-4 text-red-600">Gut-feel or static Excel</td>
+                            <td class="px-6 py-4 text-green-600">Netsuite demand forecasting + Machine Learning model with time series analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Strategic Roadmap -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">📊 Strategic Roadmap</h2>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Short Term -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-green-500">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🚀</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-green-600">Short-Term</h3>
+                        <p class="text-sm text-gray-600">0-3 months</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-green-500 mr-2">✅</span>
+                            <span class="text-sm">Build lightweight PoC: AI assistant + demand forecasting</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-green-500 mr-2">✅</span>
+                            <span class="text-sm">Integrate with NetSuite sandbox</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-green-500 mr-2">✅</span>
+                            <span class="text-sm">Mobile mockup for future app</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medium Term -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-yellow-500">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">⚙️</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-yellow-600">Medium-Term</h3>
+                        <p class="text-sm text-gray-600">3-6 months</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-yellow-500 mr-2">🔹</span>
+                            <span class="text-sm">Add ML models for reorder & AI-based pricing</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-yellow-500 mr-2">🔹</span>
+                            <span class="text-sm">Pilot B2C "Lighting Recommender"</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-yellow-500 mr-2">🔹</span>
+                            <span class="text-sm">Add Manufacturing KPIs with alerts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long Term -->
+                <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-purple-500">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-purple-600">Long-Term</h3>
+                        <p class="text-sm text-gray-600">6-12 months</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-purple-500 mr-2">🔹</span>
+                            <span class="text-sm">Launch subscription portal (FBN-style)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-purple-500 mr-2">🔹</span>
+                            <span class="text-sm">Add AR/AI-driven visualizers</span>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-purple-500 mr-2">🔹</span>
+                            <span class="text-sm">Voice AI in warehouse integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PoC Components -->
+        <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">⚙️ PoC Components - All-In-One Smart Portal</h2>
+            
+            <div class="text-center mb-8">
+                <button onclick="showPoCComponents()" class="bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg transform hover:scale-105 transition-all duration-300">
+                    🚀 View Interactive PoC Mockups
+                </button>
+                <p class="text-gray-600 mt-3">Click to explore all 4 components with live demonstrations</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div onclick="showPoCComponents()" class="bg-white rounded-lg p-6 shadow-md card-hover cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-blue-300">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🔦</span>
+                        <h3 class="font-semibold mt-2">AI Demand Forecasting</h3>
+                    </div>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><strong>Input:</strong> Sales data, seasonality</p>
+                        <p><strong>Output:</strong> Reorder alerts</p>
+                        <p><strong>Tech:</strong> Python ML → NetSuite API</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <span class="text-xs text-blue-600 font-medium">Click to explore →</span>
+                    </div>
+                </div>
+
+                <div onclick="toggleChat()" class="bg-white rounded-lg p-6 shadow-md card-hover cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-green-300">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🤖</span>
+                        <h3 class="font-semibold mt-2">AI Sales Assistant</h3>
+                    </div>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><strong>Features:</strong> Stock status, quotes</p>
+                        <p><strong>Tech:</strong> GPT-4 Turbo API</p>
+                        <p><strong>Interface:</strong> React + Tailwind</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <span class="text-xs text-green-600 font-medium">Click to chat →</span>
+                    </div>
+                </div>
+
+                <div onclick="showKPIDashboard()" class="bg-white rounded-lg p-6 shadow-md card-hover cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-purple-300">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">📈</span>
+                        <h3 class="font-semibold mt-2">KPI Dashboard</h3>
+                    </div>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><strong>Metrics:</strong> Inventory accuracy</p>
+                        <p><strong>Features:</strong> Real-time alerts</p>
+                        <p><strong>Tech:</strong> SuiteAnalytics</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <span class="text-xs text-purple-600 font-medium">Click to view →</span>
+                    </div>
+                </div>
+
+                <div onclick="showMobileApp()" class="bg-white rounded-lg p-6 shadow-md card-hover cursor-pointer transform hover:scale-105 transition-all duration-300 border-2 border-transparent hover:border-pink-300">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">📱</span>
+                        <h3 class="font-semibold mt-2">Mobile App Mockup</h3>
+                    </div>
+                    <div class="text-sm text-gray-600 space-y-2">
+                        <p><strong>Features:</strong> Lighting Recommender</p>
+                        <p><strong>Model:</strong> FBN-style subscriptions</p>
+                        <p><strong>Future:</strong> AR visualization</p>
+                    </div>
+                    <div class="text-center mt-4">
+                        <span class="text-xs text-pink-600 font-medium">Click to explore →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- B2C Bridge -->
+        <div class="bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">📦 Manufacturing to B2C Bridge</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <span class="text-4xl mb-4 block">👥</span>
+                    <h3 class="font-semibold mb-2">B2C Customers</h3>
+                    <p class="text-sm text-gray-600">Warehouse managers, small retailers, interior decorators</p>
+                </div>
+                
+                <div class="text-center p-6 bg-green-50 rounded-lg">
+                    <span class="text-4xl mb-4 block">📦</span>
+                    <h3 class="font-semibold mb-2">Product Bundles</h3>
+                    <p class="text-sm text-gray-600">AI-based lighting needs analysis and recommendations</p>
+                </div>
+                
+                <div class="text-center p-6 bg-purple-50 rounded-lg">
+                    <span class="text-4xl mb-4 block">🧮</span>
+                    <h3 class="font-semibold mb-2">Lighting Calculator</h3>
+                    <p class="text-sm text-gray-600">Freemium tool with subscription features</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PoC Components Modal -->
+    <div id="pocModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="bg-gradient-to-r from-indigo-600 to-blue-600 text-white p-6 rounded-t-xl flex justify-between items-center">
+                <h2 class="text-2xl font-bold">⚙️ PoC Components - Interactive Mockups</h2>
+                <button onclick="closePoCComponents()" class="text-white hover:text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- AI Demand Forecasting -->
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                        <div class="text-center mb-6">
+                            <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl">🔦</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-blue-800">AI Demand Forecasting</h3>
+                            <p class="text-sm text-blue-600">Predictive inventory management with ML</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <h4 class="font-semibold mb-3 text-gray-800">📊 Current Inventory Levels</h4>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm">LED High Bay 150W</span>
+                                        <div class="flex items-center">
+                                            <div class="w-24 bg-gray-200 rounded-full h-2 mr-2">
+                                                <div class="bg-red-500 h-2 rounded-full" style="width: 25%"></div>
+                                            </div>
+                                            <span class="text-xs text-red-600">347 units</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm">LED Panel 2x4</span>
+                                        <div class="flex items-center">
+                                            <div class="w-24 bg-gray-200 rounded-full h-2 mr-2">
+                                                <div class="bg-green-500 h-2 rounded-full" style="width: 75%"></div>
+                                            </div>
+                                            <span class="text-xs text-green-600">892 units</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-sm">LED Strip Lights</span>
+                                        <div class="flex items-center">
+                                            <div class="w-24 bg-gray-200 rounded-full h-2 mr-2">
+                                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                                            </div>
+                                            <span class="text-xs text-yellow-600">1,205 units</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <h4 class="font-semibold mb-3 text-gray-800">🤖 AI Predictions</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-red-50 border border-red-200 rounded-lg p-3">
+                                        <div class="flex items-center mb-2">
+                                            <span class="text-red-500 mr-2">⚠️</span>
+                                            <span class="font-medium text-red-800">Reorder Alert</span>
+                                        </div>
+                                        <p class="text-sm text-red-700">LED High Bay 150W predicted to stock out in 12 days based on current demand trend (+15% vs last month)</p>
+                                        <button class="mt-2 bg-red-600 text-white px-3 py-1 rounded text-xs hover:bg-red-700">Generate PO</button>
+                                    </div>
+                                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                                        <div class="flex items-center mb-2">
+                                            <span class="text-blue-500 mr-2">📈</span>
+                                            <span class="font-medium text-blue-800">Demand Forecast</span>
+                                        </div>
+                                        <p class="text-sm text-blue-700">LED Panel 2x4 demand expected to increase 28% next quarter due to seasonal construction trends</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Sales Assistant -->
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200">
+                        <div class="text-center mb-6">
+                            <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl">🤖</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-green-800">AI Sales Assistant</h3>
+                            <p class="text-sm text-green-600">GPT-4 powered customer support</p>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg p-4 shadow-sm h-80 flex flex-col">
+                            <div class="flex-1 overflow-y-auto space-y-3 mb-4">
+                                <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                                    <p class="text-sm">Hi! I need lighting for a 10,000 sq ft warehouse. What do you recommend?</p>
+                                </div>
+                                <div class="bg-green-100 rounded-lg p-3 max-w-xs ml-auto">
+                                    <p class="text-sm">For a 10,000 sq ft warehouse, I recommend 25 LED High Bay 150W fixtures for optimal 50 foot-candles. Based on your space, this provides excellent coverage with 20% energy savings vs traditional options. Current pricing: $125 each with volume discount. Would you like a detailed quote?</p>
+                                </div>
+                                <div class="bg-gray-100 rounded-lg p-3 max-w-xs">
+                                    <p class="text-sm">Yes, please include installation costs</p>
+                                </div>
+                                <div class="bg-green-100 rounded-lg p-3 max-w-xs ml-auto">
+                                    <p class="text-sm">Quote generated: 25x LED High Bay 150W @ $125 = $3,125. Installation (certified contractor): $1,875. Total: $5,000. 5-year warranty included. This setup will save ~$2,400/year in energy costs. Shall I connect you with our installation team?</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="text" placeholder="Ask about products, pricing, installation..." class="flex-1 border rounded-lg px-3 py-2 text-sm">
+                                <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 text-sm">Send</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPI Dashboard -->
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200">
+                        <div class="text-center mb-6">
+                            <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl">📈</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-800">KPI Dashboard</h3>
+                            <p class="text-sm text-purple-600">Real-time business metrics</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                    <div class="text-2xl font-bold text-green-600">94.2%</div>
+                                    <div class="text-xs text-gray-600">Inventory Accuracy</div>
+                                    <div class="text-xs text-green-600">↑ 2.1% vs last month</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                    <div class="text-2xl font-bold text-blue-600">$847K</div>
+                                    <div class="text-xs text-gray-600">Monthly Revenue</div>
+                                    <div class="text-xs text-blue-600">↑ 12.5% vs last month</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                    <div class="text-2xl font-bold text-orange-600">2.1 days</div>
+                                    <div class="text-xs text-gray-600">Avg Quote Time</div>
+                                    <div class="text-xs text-green-600">↓ 65% with AI</div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 text-center shadow-sm">
+                                    <div class="text-2xl font-bold text-red-600">3</div>
+                                    <div class="text-xs text-gray-600">Stock Alerts</div>
+                                    <div class="text-xs text-red-600">Immediate attention</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <h4 class="font-semibold mb-3 text-gray-800">🚨 Active Alerts</h4>
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between bg-red-50 border border-red-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <span class="text-red-500 mr-2">⚠️</span>
+                                            <span class="text-sm">LED High Bay low stock</span>
+                                        </div>
+                                        <button class="bg-red-600 text-white px-2 py-1 rounded text-xs">Action</button>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-yellow-50 border border-yellow-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <span class="text-yellow-500 mr-2">📦</span>
+                                            <span class="text-sm">Shipment delayed - Order #TL-2024-1156</span>
+                                        </div>
+                                        <button class="bg-yellow-600 text-white px-2 py-1 rounded text-xs">View</button>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-blue-50 border border-blue-200 rounded p-2">
+                                        <div class="flex items-center">
+                                            <span class="text-blue-500 mr-2">💰</span>
+                                            <span class="text-sm">Large quote pending - $45K project</span>
+                                        </div>
+                                        <button class="bg-blue-600 text-white px-2 py-1 rounded text-xs">Review</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile App Mockup -->
+                    <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 border-2 border-pink-200">
+                        <div class="text-center mb-6">
+                            <div class="w-20 h-20 bg-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span class="text-3xl">📱</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-pink-800">Mobile App Mockup</h3>
+                            <p class="text-sm text-pink-600">B2C customer experience</p>
+                        </div>
+                        
+                        <div class="bg-gray-800 rounded-2xl p-4 mx-auto max-w-xs">
+                            <div class="bg-white rounded-xl p-4 h-96 overflow-y-auto">
+                                <div class="text-center mb-4">
+                                    <div class="text-lg font-bold text-pink-600">TUROLIGHT</div>
+                                    <div class="text-xs text-gray-600">Smart Lighting Solutions</div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg p-3 text-center">
+                                        <div class="text-lg">🧮</div>
+                                        <div class="text-sm font-medium">Lighting Calculator</div>
+                                        <div class="text-xs opacity-90">AI-powered recommendations</div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg p-3 text-center">
+                                        <div class="text-lg">🎯</div>
+                                        <div class="text-sm font-medium">Product Finder</div>
+                                        <div class="text-xs opacity-90">Smart recommendations</div>
+                                    </div>
+                                    
+                                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg p-3 text-center">
+                                        <div class="text-lg">💎</div>
+                                        <div class="text-sm font-medium">Pro Subscription</div>
+                                        <div class="text-xs opacity-90">$99/month - 15% off all orders</div>
+                                    </div>
+                                    
+                                    <div class="bg-gray-100 rounded-lg p-3">
+                                        <div class="text-sm font-medium mb-2">Recent Projects</div>
+                                        <div class="space-y-2">
+                                            <div class="flex justify-between text-xs">
+                                                <span>Warehouse Retrofit</span>
+                                                <span class="text-green-600">Completed</span>
+                                            </div>
+                                            <div class="flex justify-between text-xs">
+                                                <span>Office LED Upgrade</span>
+                                                <span class="text-blue-600">In Progress</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+                                        <div class="text-xs font-medium text-yellow-800">💡 Energy Savings</div>
+                                        <div class="text-xs text-yellow-700">You've saved $3,247 this year with LED upgrades!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-center mb-4 text-gray-800">🔧 Technical Implementation</h3>
+                    <div class="grid md:grid-cols-4 gap-4 text-sm">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">🐍</span>
+                            <p class="font-medium">Python ML Models</p>
+                            <p class="text-gray-600 text-xs">Scikit-learn, TensorFlow for demand forecasting</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">🔗</span>
+                            <p class="font-medium">NetSuite Integration</p>
+                            <p class="text-gray-600 text-xs">Real-time ERP data sync via REST APIs</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">🤖</span>
+                            <p class="font-medium">GPT-4 Turbo</p>
+                            <p class="text-gray-600 text-xs">Natural language processing for customer queries</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">⚛️</span>
+                            <p class="font-medium">React + Tailwind</p>
+                            <p class="text-gray-600 text-xs">Modern responsive UI framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KPI Dashboard Modal -->
+    <div id="kpiModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-6 rounded-t-xl flex justify-between items-center">
+                <h2 class="text-2xl font-bold">📈 Turolight KPI Dashboard</h2>
+                <button onclick="closeKPIDashboard()" class="text-white hover:text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-6">
+                <!-- Key Metrics Grid -->
+                <div class="grid md:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600">94.2%</div>
+                            <div class="text-sm text-gray-600 mt-1">Inventory Accuracy</div>
+                            <div class="text-xs text-green-600 mt-2">↑ 2.1% vs last month</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                                <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 94.2%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">$847K</div>
+                            <div class="text-sm text-gray-600 mt-1">Monthly Revenue</div>
+                            <div class="text-xs text-blue-600 mt-2">↑ 12.5% vs last month</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                                <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-200">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-600">2.1</div>
+                            <div class="text-sm text-gray-600 mt-1">Avg Quote Time (days)</div>
+                            <div class="text-xs text-green-600 mt-2">↓ 65% with AI</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                                <div class="bg-orange-500 h-2 rounded-full progress-bar" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border-2 border-red-200">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600">3</div>
+                            <div class="text-sm text-gray-600 mt-1">Critical Stock Alerts</div>
+                            <div class="text-xs text-red-600 mt-2">Immediate attention</div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                                <div class="bg-red-500 h-2 rounded-full progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts and Analytics -->
+                <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Sales Trend Chart -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border">
+                        <h3 class="text-lg font-bold mb-4 text-gray-800">📊 Sales Trend (Last 6 Months)</h3>
+                        <div class="h-48 bg-gradient-to-t from-blue-50 to-white rounded-lg p-4 relative">
+                            <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end h-32">
+                                <div class="bg-blue-500 rounded-t" style="height: 60%; width: 12%"></div>
+                                <div class="bg-blue-500 rounded-t" style="height: 45%; width: 12%"></div>
+                                <div class="bg-blue-500 rounded-t" style="height: 70%; width: 12%"></div>
+                                <div class="bg-blue-500 rounded-t" style="height: 85%; width: 12%"></div>
+                                <div class="bg-blue-500 rounded-t" style="height: 90%; width: 12%"></div>
+                                <div class="bg-blue-600 rounded-t" style="height: 100%; width: 12%"></div>
+                            </div>
+                            <div class="absolute bottom-0 left-4 right-4 flex justify-between text-xs text-gray-500">
+                                <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Performance -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border">
+                        <h3 class="text-lg font-bold mb-4 text-gray-800">🏆 Top Performing Products</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">LED High Bay 150W</div>
+                                    <div class="text-sm text-gray-600">347 units sold</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-green-600">$43,375</div>
+                                    <div class="text-xs text-green-600">↑ 15%</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">LED Panel 2x4</div>
+                                    <div class="text-sm text-gray-600">892 units sold</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-green-600">$62,440</div>
+                                    <div class="text-xs text-green-600">↑ 8%</div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">LED Strip Lights</div>
+                                    <div class="text-sm text-gray-600">1,205 units sold</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="font-bold text-green-600">$36,150</div>
+                                    <div class="text-xs text-green-600">↑ 22%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Active Alerts -->
+                <div class="bg-white rounded-xl p-6 shadow-lg border">
+                    <h3 class="text-lg font-bold mb-4 text-gray-800">🚨 Active Alerts & Actions</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-500 mr-2 text-xl">⚠️</span>
+                                <span class="font-medium text-red-800">Critical Stock Alert</span>
+                            </div>
+                            <p class="text-sm text-red-700 mb-3">LED High Bay 150W inventory below safety threshold (347 units remaining)</p>
+                            <div class="space-y-2">
+                                <button class="w-full bg-red-600 text-white px-3 py-2 rounded text-sm hover:bg-red-700">Generate Emergency PO</button>
+                                <button class="w-full bg-red-100 text-red-700 px-3 py-2 rounded text-sm hover:bg-red-200">Contact Supplier</button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="text-yellow-500 mr-2 text-xl">📦</span>
+                                <span class="font-medium text-yellow-800">Shipment Delay</span>
+                            </div>
+                            <p class="text-sm text-yellow-700 mb-3">Order #TL-2024-1156 delayed by 3 days due to weather conditions</p>
+                            <div class="space-y-2">
+                                <button class="w-full bg-yellow-600 text-white px-3 py-2 rounded text-sm hover:bg-yellow-700">Notify Customer</button>
+                                <button class="w-full bg-yellow-100 text-yellow-700 px-3 py-2 rounded text-sm hover:bg-yellow-200">Track Shipment</button>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-center mb-3">
+                                <span class="text-blue-500 mr-2 text-xl">💰</span>
+                                <span class="font-medium text-blue-800">Large Quote Pending</span>
+                            </div>
+                            <p class="text-sm text-blue-700 mb-3">$45,000 warehouse lighting project quote pending customer approval</p>
+                            <div class="space-y-2">
+                                <button class="w-full bg-blue-600 text-white px-3 py-2 rounded text-sm hover:bg-blue-700">Follow Up</button>
+                                <button class="w-full bg-blue-100 text-blue-700 px-3 py-2 rounded text-sm hover:bg-blue-200">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manufacturing KPIs -->
+                <div class="mt-8 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-center mb-6 text-gray-800">🏭 Manufacturing KPIs</h3>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-green-600">98.5%</div>
+                            <div class="text-sm text-gray-600">Production Efficiency</div>
+                            <div class="text-xs text-green-600 mt-1">↑ 1.2% this week</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-blue-600">99.1%</div>
+                            <div class="text-sm text-gray-600">Quality Rate</div>
+                            <div class="text-xs text-blue-600 mt-1">↑ 0.3% this week</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-orange-600">4.2hrs</div>
+                            <div class="text-sm text-gray-600">Avg Setup Time</div>
+                            <div class="text-xs text-green-600 mt-1">↓ 15min this week</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <div class="text-2xl font-bold text-purple-600">156</div>
+                            <div class="text-sm text-gray-600">Units/Hour</div>
+                            <div class="text-xs text-purple-600 mt-1">↑ 8 units this week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile App Modal -->
+    <div id="mobileAppModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="bg-gradient-to-r from-pink-600 to-purple-600 text-white p-6 rounded-t-xl flex justify-between items-center">
+                <h2 class="text-2xl font-bold">📱 Turolight B2C Mobile App (Mockup)</h2>
+                <button onclick="closeMobileApp()" class="text-white hover:text-gray-200">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Lighting Calculator -->
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-2 border-blue-200">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">🧮</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-blue-800">AI Lighting Calculator</h3>
+                        </div>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Room Dimensions</p>
+                                <input type="text" placeholder="Length x Width x Height" class="w-full mt-1 p-2 border rounded text-xs">
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Usage Type</p>
+                                <select class="w-full mt-1 p-2 border rounded text-xs">
+                                    <option>Warehouse</option>
+                                    <option>Office</option>
+                                    <option>Retail</option>
+                                    <option>Manufacturing</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 text-sm font-medium">
+                                Calculate Lighting Needs
+                            </button>
+                            <div class="bg-green-50 border border-green-200 rounded-lg p-2 text-xs">
+                                <p class="font-medium text-green-800">AI Recommendation:</p>
+                                <p class="text-green-700">12x LED High Bay 150W fixtures needed for optimal 50 foot-candles</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Recommender -->
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-2 border-green-200">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">🎯</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-green-800">Smart Product Recommender</h3>
+                        </div>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Tell us about your project:</p>
+                                <textarea placeholder="Describe your lighting needs..." class="w-full mt-1 p-2 border rounded text-xs h-16 resize-none"></textarea>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Budget Range</p>
+                                <select class="w-full mt-1 p-2 border rounded text-xs">
+                                    <option>$1,000 - $5,000</option>
+                                    <option>$5,000 - $15,000</option>
+                                    <option>$15,000 - $50,000</option>
+                                    <option>$50,000+</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 text-sm font-medium">
+                                Get AI Recommendations
+                            </button>
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-2 text-xs">
+                                <p class="font-medium text-blue-800">Recommended Products:</p>
+                                <p class="text-blue-700">• LED High Bay 150W (Qty: 12)<br>• Emergency Exit Signs (Qty: 4)<br>• Motion Sensors (Qty: 6)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subscription Plans -->
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 border-2 border-purple-200">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">💎</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-purple-800">Subscription Plans</h3>
+                        </div>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-white rounded-lg p-3 border-l-4 border-purple-500">
+                                <p class="font-bold text-purple-800">Lighting Pro</p>
+                                <p class="text-purple-600">$99/month</p>
+                                <ul class="text-xs mt-2 space-y-1 text-gray-600">
+                                    <li>• Unlimited lighting calculations</li>
+                                    <li>• Priority customer support</li>
+                                    <li>• 15% discount on all products</li>
+                                    <li>• Free installation consultation</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 border-l-4 border-yellow-500">
+                                <p class="font-bold text-yellow-800">Enterprise</p>
+                                <p class="text-yellow-600">$299/month</p>
+                                <ul class="text-xs mt-2 space-y-1 text-gray-600">
+                                    <li>• Everything in Lighting Pro</li>
+                                    <li>• Dedicated account manager</li>
+                                    <li>• 25% discount on bulk orders</li>
+                                    <li>• Custom lighting design service</li>
+                                </ul>
+                            </div>
+                            <button class="w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 text-sm font-medium">
+                                Choose Plan
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Request Quote -->
+                    <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 border-2 border-orange-200">
+                        <div class="text-center mb-4">
+                            <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl">📋</span>
+                            </div>
+                            <h3 class="font-bold text-lg text-orange-800">Request Custom Quote</h3>
+                        </div>
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Company Name</p>
+                                <input type="text" placeholder="Your company name" class="w-full mt-1 p-2 border rounded text-xs">
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Project Details</p>
+                                <textarea placeholder="Describe your lighting project..." class="w-full mt-1 p-2 border rounded text-xs h-16 resize-none"></textarea>
+                            </div>
+                            <div class="bg-white rounded-lg p-3">
+                                <p class="font-medium">Timeline</p>
+                                <select class="w-full mt-1 p-2 border rounded text-xs">
+                                    <option>ASAP</option>
+                                    <option>Within 1 month</option>
+                                    <option>1-3 months</option>
+                                    <option>3+ months</option>
+                                </select>
+                            </div>
+                            <button class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 text-sm font-medium">
+                                Submit Quote Request
+                            </button>
+                            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-2 text-xs">
+                                <p class="font-medium text-yellow-800">⚡ AI-Powered:</p>
+                                <p class="text-yellow-700">Get instant preliminary quotes with our AI pricing engine!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6">
+                    <h3 class="text-xl font-bold text-center mb-4 text-gray-800">🚀 Coming Soon: Advanced AI Features</h3>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">📸</span>
+                            <p class="font-medium">AR Visualization</p>
+                            <p class="text-gray-600 text-xs">See how fixtures look in your space using augmented reality</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">🎤</span>
+                            <p class="font-medium">Voice Assistant</p>
+                            <p class="text-gray-600 text-xs">Ask questions and get recommendations using voice commands</p>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                            <span class="text-2xl block mb-2">📊</span>
+                            <p class="font-medium">Energy Analytics</p>
+                            <p class="text-gray-600 text-xs">Track energy savings and ROI with smart monitoring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Widget - Bottom Right -->
+    <div id="chatWidget" class="fixed bottom-6 right-6 z-50">
+        <!-- Chat Toggle Button -->
+        <button id="chatToggle" onclick="toggleChat()" class="bg-blue-800 hover:bg-blue-900 text-white rounded-full p-4 shadow-lg transition-all duration-300 transform hover:scale-105">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.955 8.955 0 01-4.126-.98L3 20l1.98-5.874A8.955 8.955 0 013 12c0-4.418 3.582-8 8-8s8 3.582 8 8z"></path>
+            </svg>
+        </button>
+        
+        <!-- Chat Window -->
+        <div id="chatWindow" class="absolute bottom-16 right-0 bg-white rounded-lg shadow-2xl w-80 h-96 border hidden">
+            <div class="bg-blue-800 text-white p-4 rounded-t-lg flex justify-between items-center">
+                <h3 class="font-semibold">🤖 Turolight AI Assistant</h3>
+                <button onclick="toggleChat()" class="text-white hover:text-gray-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="p-4 h-64 overflow-y-auto" id="chatArea">
+                <div class="mb-4">
+                    <div class="bg-blue-100 rounded-lg p-3 mb-2 max-w-xs">
+                        <p class="text-sm">Hello! I'm your AI lighting assistant. How can I help you today?</p>
+                    </div>
+                    <div class="flex flex-wrap gap-1 mt-3">
+                        <button onclick="quickMessage('Check LED High Bay inventory')" class="bg-blue-600 text-white text-xs px-3 py-2 rounded-full hover:bg-blue-700 transition-colors">📦 Check inventory</button>
+                        <button onclick="quickMessage('Quote for warehouse LED fixtures')" class="bg-green-600 text-white text-xs px-3 py-2 rounded-full hover:bg-green-700 transition-colors">💰 Get quote</button>
+                        <button onclick="quickMessage('Show Turolight catalog products')" class="bg-purple-600 text-white text-xs px-3 py-2 rounded-full hover:bg-purple-700 transition-colors">📋 View catalog</button>
+                        <button onclick="quickMessage('Warranty terms and conditions')" class="bg-orange-600 text-white text-xs px-3 py-2 rounded-full hover:bg-orange-700 transition-colors">🛡️ Warranty info</button>
+                        <button onclick="showMobileApp()" class="bg-pink-600 text-white text-xs px-3 py-2 rounded-full hover:bg-pink-700 transition-colors">📱 B2C Mobile App</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="p-4 border-t">
+                <div class="flex gap-2">
+                    <input type="text" id="userInput" placeholder="Ask about products..." class="flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button onclick="sendMessage()" class="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 text-sm">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.classList.toggle('hidden');
+        }
+
+        function showMobileApp() {
+            const modal = document.getElementById('mobileAppModal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeMobileApp() {
+            const modal = document.getElementById('mobileAppModal');
+            modal.classList.add('hidden');
+        }
+
+        function showKPIDashboard() {
+            const modal = document.getElementById('kpiModal');
+            modal.classList.remove('hidden');
+        }
+
+        function closeKPIDashboard() {
+            const modal = document.getElementById('kpiModal');
+            modal.classList.add('hidden');
+        }
+
+        function showPoCComponents() {
+            const modal = document.getElementById('pocModal');
+            modal.classList.remove('hidden');
+        }
+
+        function closePoCComponents() {
+            const modal = document.getElementById('pocModal');
+            modal.classList.add('hidden');
+        }
+
+        function quickMessage(message) {
+            document.getElementById('userInput').value = message;
+            sendMessage();
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('userInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            const chatArea = document.getElementById('chatArea');
+            
+            // Add user message
+            const userDiv = document.createElement('div');
+            userDiv.className = 'mb-4 text-right';
+            userDiv.innerHTML = `<div class="bg-blue-800 text-white rounded-lg p-3 mb-2 max-w-xs ml-auto"><p class="text-sm">${message}</p></div>`;
+            chatArea.appendChild(userDiv);
+
+            // Simulate AI response
+            setTimeout(() => {
+                const aiDiv = document.createElement('div');
+                aiDiv.className = 'mb-4';
+                
+                let response = '';
+                if (message.toLowerCase().includes('inventory') || message.toLowerCase().includes('stock')) {
+                    response = 'Current Turolight inventory: LED High Bay fixtures (347 units), LED Panel Lights (892 units), LED Strip Lights (1,205 units), Emergency Lighting (156 units). All products meet CSA and UL standards. Need specific product availability?';
+                } else if (message.toLowerCase().includes('quote') || message.toLowerCase().includes('price')) {
+                    response = 'Turolight quote generated: Based on our 2024-25 catalog, LED High Bay 150W fixtures start at $125 each. Volume discounts available for 25+ units. All quotes valid 30 days. Terms: Net 30 days, FOB shipping point. Need detailed specifications?';
+                } else if (message.toLowerCase().includes('recommend') || message.toLowerCase().includes('calculator') || message.toLowerCase().includes('lighting')) {
+                    response = 'For optimal lighting design: Turolight LED High Bays provide 150-200 lumens/watt efficiency. For warehouses: 1 fixture per 400-600 sq ft. Our T8 LED tubes offer 50,000+ hour lifespan. All products backed by 5-year warranty. What\'s your application?';
+                } else if (message.toLowerCase().includes('warranty') || message.toLowerCase().includes('terms')) {
+                    response = 'Turolight warranty terms: 5-year limited warranty on LED fixtures, 3-year on drivers. Returns accepted within 30 days with RMA. Defective products replaced at no charge. Full terms available in our General Terms & Conditions document.';
+                } else if (message.toLowerCase().includes('catalog') || message.toLowerCase().includes('products')) {
+                    response = 'Turolight 2024-25 catalog includes: LED High Bay fixtures, Panel Lights, Strip Lights, T8 Tubes, Emergency Lighting, and Outdoor fixtures. All CSA/UL certified. Energy rebates available. Which product category interests you?';
+                } else {
+                    response = 'I can help with Turolight product information, inventory status, quotes, lighting calculations, warranty terms, and technical specifications. What would you like to know?';
+                }
+                
+                aiDiv.innerHTML = `<div class="bg-blue-100 rounded-lg p-3 mb-2 max-w-xs"><p class="text-sm">${response}</p></div>`;
+                chatArea.appendChild(aiDiv);
+                chatArea.scrollTop = chatArea.scrollHeight;
+            }, 1000);
+
+            input.value = '';
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Add enter key support
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Add fade-in animation to elements as they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96ac45dc06b6aabd',t:'MTc1NDQ1OTU5Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
